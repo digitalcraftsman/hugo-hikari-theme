@@ -25,6 +25,10 @@
                     </a>
                 </div>
                 
+                {{ if isset .Site.Params "disqusShortname" }}
+                    {{ partial "disqus" . }}
+                {{ end }}
+
                 {{ if .NextInSection }}
                     <a rel="next" href="{{ .NextInSection.Permalink }}" id="next">
                         <span class="nav-title nav-title-next">{{ with .Site.Params.newer }}{{ . }}{{ end }}</span> &rarr;
@@ -35,7 +39,6 @@
                         &larr; <span class="nav-title nav-title-prev">{{ with .Site.Params.older }}{{ . }}{{ end }}</span>
                     </a>
                 {{ end }}
-         
             </article>
         </section>
 

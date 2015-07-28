@@ -11,6 +11,13 @@
         {{ end }}
     </div>
     <nav>
+        {{ with .Site.Params.offcanvas.subscribe }}
+        <h6>{{ . }}</h6>
+        {{ end }}
+
+        <ul>
+            <li><a target="_blank" href="{{ .Site.BaseURL }}index.xml">RSS feed</a></li>
+        </ul>
 
         {{ with .Site.Params.offcanvas.followme }}
         <h6>{{ . }}</h6>

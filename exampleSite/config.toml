@@ -20,6 +20,9 @@ theme = "hugo-hikari-theme"
 	newer = "Newer"
 	older = "Older"
 
+	pageNotFoundTitle = "Page not found"
+	pageNotFoundSubtitle = "Sorry, but the requested page wasn’t <br> found on the server."
+
 [params.offcanvas]
 	# Menu items
 	title = "Hi, I'm John Doe"

@@ -7,9 +7,9 @@
         {{ partial "header" . }}
         
         <section class="single-wrap">
-            <article class="single-content" itemscope itemtype="//schema.org/BlogPosting">
-                <h1 class="page-title" itemprop="name headline">Page not found</h1>
-                <h3 style="text-align: center;">Sorry, but the requested page wasn’t <br> found on the server.</h3>
+            <article class="single-content">
+                <h1 class="page-title" itemprop="name headline">{{ .Site.Params.pageNotFoundTitle | markdownify }}</h1>
+                <h3 style="text-align: center;">{{ .Site.Params.pageNotFoundSubtitle | markdownify }}</h3>
 			</article>
 		</section>
 

@@ -3,6 +3,8 @@ languageCode = "en-us"
 title = "hikari"
 # Enable comments by entering your Disqus shortname
 disqusShortname = "spf13"
+# Enable Google Analytics by entering your tracking code
+googleAnalytics = ""
 theme = "hugo-hikari-theme"
 
 [permalinks]
@@ -12,9 +14,6 @@ theme = "hugo-hikari-theme"
 	name = "Your name"
 	description = "Describe your website"
 	copyright = "POWERED BY [HUGO](//gohugo.io) - THEME: [HIKARI](//github.com/digitalcraftsman/hugo-hikari-theme) - © JOHN DOE"
-
-	# Enable Google Analytics by entering your tracking code
-	googleanalytics = ""
 
 	# Links to newer/older blog posts
 	newer = "Newer"

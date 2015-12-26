@@ -25,9 +25,7 @@
                     </a>
                 </div>
                 
-                {{ if isset .Site.Params "disqusshortname" }}
-                    {{ partial "disqus" . }}
-                {{ end }}
+                {{ template "_internal/disqus.html" . }}
 
                 {{ if .NextInSection }}
                     <a rel="next" href="{{ .NextInSection.Permalink }}" id="next">

@@ -11,6 +11,27 @@
         {{ end }}
     </div>
     <nav>
+
+        {{ if .Site.Params.offcanvas.search_enabled }}
+
+        {{ with .Site.Params.offcanvas.search }}
+        <h6>{{ . }}</h6>
+        {{ end }}
+
+        <div>
+            <form name="google-search" method="get" action="http://www.google.com/search" target="_blank">
+                <input type="hidden" name="sitesearch" value="{{ .Site.BaseURL }}" />
+                <input name="q" type="text" />
+                <input type="submit" name="sa" value="Google" />
+            </form>
+        </div>
+
+        {{end}}
+
+        {{ with .Site.Params.offcanvas.subscribe }}
+        <h6>{{ . }}</h6>
+        {{ end }}
+
         {{ with .Site.Params.offcanvas.subscribe }}
         <h6>{{ . }}</h6>
         {{ end }}

@@ -29,6 +29,10 @@ theme = "hugo-hikari-theme"
 	subscribe = "Subscribe"
 	followme = "Follow me on"
 
+	# Enable Google search
+	search_enabled = false
+	search = "Search"
+
 	[[params.offcanvas.socialnetworks]]
 		name = "Github"
 		url = "//github.com/spf13"

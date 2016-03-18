@@ -15,6 +15,10 @@ theme = "hugo-hikari-theme"
 	description = "Describe your website"
 	copyright = "POWERED BY [HUGO](//gohugo.io) - THEME: [HIKARI](//github.com/digitalcraftsman/hugo-hikari-theme) - © JOHN DOE"
 
+	# Custom assets can be linked with their paths relative to static/
+	custom_css = []
+	custom_js  = []
+
 	# Links to newer/older blog posts
 	newer = "Newer"
 	older = "Older"

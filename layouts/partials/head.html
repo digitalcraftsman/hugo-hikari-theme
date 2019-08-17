@@ -11,7 +11,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="author" content="{{ with .Site.Params.name }}{{ . }}{{ end }}">
     <meta name="description" content="{{ with .Site.Params.description }}{{ . }}{{ end }}">
-    {{ .Hugo.Generator }}
+    {{ hugo.Generator }}
+
+    {{ with .OutputFormats.Get "RSS" }}
+    <link href="{{ .RelPermalink }}" rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }}" />
+    <link href="{{ .RelPermalink }}" rel="feed" type="application/rss+xml" title="{{ $.Site.Title }}" />
+    {{ end }}
 
     {{ "<!-- Stylesheets -->" | safeHTML }}
     <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}css/main.css" />

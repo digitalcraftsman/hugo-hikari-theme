@@ -4,8 +4,8 @@ licenselink = "//github.com/digitalcraftsman/hugo-hikari-theme/blob/dev/LICENSE.
 description = " A minimal theme perfect for dev-savvy bloggers."
 homepage = "//github.com/digitalcraftsman/hugo-hikari-theme"
 tags = ["blog", "minimal", "syntax highlighting", "Disqus", "Google Analytics"]
-features = ["", ""]
-min_version = 0.14
+features = []
+min_version = "0.57.0"
 
 [author]
   name = "digitalcraftsman"
